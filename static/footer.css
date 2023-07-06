@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+}
+
+.title {
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+.créateur{
+    margin-left: 60%;
+    width: 25%;
+    height: 25%;
+    color: white;
+    border-radius: 10%;
+}

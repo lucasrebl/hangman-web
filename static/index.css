@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+}
+
+.formulaire{
+    border-radius: 10px;
+    width: 40vh;
+    height: 10vh;
+    margin-left: 1%;
+    margin-top: 3%;
+    margin-bottom: 31.1%;
+}
+
+.title2{
+    color: white;
+    text-align: center;
+}
+
+.input {
+    border-radius: 12px;
+    color: white;
+    width: 100%;
+    background-color: black;
+  }
+
+.button{
+    margin-top: 2%;
+    margin-left: 10%;
+}

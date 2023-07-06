@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    background-color: black;
+}
+
+.title {
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 60%;
+    width: 25%;
+    height: 25%;
+    color: #000000;
+    border-color: #ffffff;
+    border-radius: 10%;
+    color: #1ABC9C;
+    border-color: #1ABC9C;
+}

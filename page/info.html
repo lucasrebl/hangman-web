@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="../static/info.css">
+    <link rel="stylesheet" href="../static/footer.css">
+    <link rel="stylesheet" href="../static/header.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman-Web Level</title>
+</head>
+
+{{template "header"}}
+
+<body>
+    <div class="home">
+        <div class="level">
+            <form method="POST" action="/hangman">
+                <input class="icon" name="PLAY" type="text" />
+                <div class="label">CHOOSE A LEVEL</div>
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+{{template "footer"}}
+
+</html>

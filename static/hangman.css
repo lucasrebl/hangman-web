@@ -1,0 +1,21 @@
+.jeux{
+    margin-top: 13%;
+    text-align: center;
+}
+
+.life{
+    margin-bottom: 15.8%;
+    text-align: center;
+}
+
+.home{
+    background-color: grey;
+}
+
+.win{
+    text-align: center;
+}
+
+.lose{
+    text-align: center;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman-Web Hangman</title>
+    <link rel="stylesheet" href="../static/hangman.css">
+    <link rel="stylesheet" href="../static/header.css">
+    <link rel="stylesheet" href="../static/footer.css">
+</head>
+
+{{template "header"}}
+
+<body>
+    <div class="home">
+        {{if eq .Win true}}
+        <div class="win">
+            <h1>win</h1>
+        </div>
+        {{else if eq .Life 0}}
+        <div class="lose">
+            <h1>lose</h1>
+            le mot était : {{.Mot_a_trouver}}
+        </div>
+        {{else}}
+        {{if .Difficulte}}
+        <form action="/hangman" class="jeux" method="POST">
+            <!-- method GET possible mais montre le résultat de l'input dans l'url-->
+            <label>Input Letter</label><br />
+            <input type="text" name="letter"><br />
+            <input type="submit">
+        </form>
+        {{else}}
+
+        <div class="level">
+            <form method="POST" action="/hangman">
+                <input class="icon" name="PLAY" type="text" />
+                <div class="label">CHOOSE A LEVEL</div>
+                <input type="submit">
+            </form>
+        </div>
+        {{end}}
+        {{end}}
+        <div class="life">
+            lettre utilisé : {{.StockLetter}}
+            <br>
+            vie restante : {{.Life}}
+            <br>
+            mauvaise entrer : {{.Erreur}}
+            <br>
+            <!-- Mot_a_trouver: {{.Mot_a_trouver}} -->
+            Mot_cache : {{.Mot_cache}}
+            <br>
+            difficulte : {{.Difficulte}}
+        </div>
+    </div>
+</body>
+
+{{template "footer"}}
+
+</html>
